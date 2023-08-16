@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <style>
+        fieldset{
+            position: relative;
+            top: 250px;
+            height: 300px; 
+        }
+        input{
+            height: 40px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        button{
+            position: relative;
+            top: 10px;
+            height: 35px;
+            width: 100px;
+            border-radius: 50px;
+            font-size: 15px;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+    <nav>
+    <center>
+        <fieldset style="width: 300px;border-color: black;border-radius: 10px;" >
+        <form action="login" method="post">
+            <table>
+
+                    <h1>Wecome to Todo App</h1>
+                
+                <tr>
+                    <th><label for="" >Email:</label></th>
+                    <td><input type="text" name="email" placeholder="enter your mail"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password:</label></th>
+                    <td><input type="text" name="password" placeholder="enter your password"></td>
+                </tr>
+                <tr>
+                    <th><button >LOGIN</button></th>
+                    <td><button>CANCEL</button></td>
+                </tr>
+            </table>
+                <tr>
+                    <td><h4>New?<a href="signup.html">Click to here Signup</a></h4></td>
+                </tr>
+            
+        </form>
+    </fieldset>
+    </center>
+</nav>
+</body>
+</html>

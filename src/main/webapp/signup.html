@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+fieldset{
+position:relative;
+top:150px;
+}
+
+</style>
+    <center>
+    <fieldset style="width: 600px;border-color: black;border-radius: 10px; " >
+        <!-- <legend style="text-align: center;">REGISTRATION FORM</legend>  -->
+    <form action="sign-up" method="post">
+        <table>
+        <h1>WELCOME TO SIGNUP PAGE</h1>
+        <tr>
+            <th><label for="fn">FISTNAME:</label></th>
+            <td><input type="text" name="fn" id="" placeholder="enter your name"></td>
+        </tr>
+        <tr>
+            <th><label for="ln">LASTNAME:</label></th>
+            <td><input type="text" name="ln" id="" required placeholder="enter your last name"></td>
+        </tr>
+        <tr>
+            <th><label for="">EMAIL:</label></th>
+            <td><input type="email" placeholder="enter your mail" required name="email"></td>
+        </tr>
+        <tr>
+            <th><label for="birth">DOB:</label></th>
+            <td><input type="date" name="birth" id="" required ></td>
+        </tr>
+        <tr>
+            <th><label for="phno">PHONENUMBER:</label></th>
+            <td><input type="number" name="phno" id="" required></td>
+        </tr>
+        <tr>
+            <th><label for="pwd">PASSWORD:</label></th>
+            <td><input type="password" name="pwd" id="" required></td>
+        </tr>
+
+        <tr>
+            <th><label for="add">ADDRESS:</label></th>
+            <td><textarea name="add" id="" cols="30" rows="7"></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="gen">GENDER:</label></th>
+            <td>MALE:<input type="radio" name="gen" id="">FEMALE:<input type="radio" name="gen" id=""></td>
+        </tr>
+        <tr>
+            <th><label for="lang">LANGUAGES KNOWN:</label></th>
+            <td>ENGLISH:<input type="checkbox" name="language" id="">KANNADA:<input type="checkbox" name="language" id="">HINDI:<input type="checkbox" name="language" id=""></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="SUBMIT"></td> 
+        </tr>
+    </table>
+    </form>
+
+</fieldset>
+</center>
+</body>
+</html>
