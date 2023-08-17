@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dao.UserDao;
+
 @WebServlet("/updatestatus")
 public class Update extends HttpServlet {
 @Override
@@ -17,7 +19,10 @@ protected void doGet(HttpServletRequest req, HttpServletResponse res) throws Ser
 		req.getRequestDispatcher("login.html").include(req, res);
 	}
 	else {
-	res.getWriter().print("<h1>this is update status</h1>");
+		int id=Integer.parseInt(req.getParameter("id"));
+		UserDao dao=new UserDao();
+		req.setAttribute("task", dao.fetchTask(id));
+        req.getRequestDispatcher("Update.jsp").forward(req, res);
 	}
 }
 }
